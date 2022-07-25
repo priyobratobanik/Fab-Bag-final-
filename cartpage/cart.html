@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fab_Bag</title>
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Poppins:wght@200;400;500&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/common_style.css">
+    <link rel="stylesheet" href="../BODY2/CORNER.css">
+    <link rel="stylesheet" href="../Body1/index1.css">
+    <link rel="stylesheet" href="../styles/foot.css">
+  </head>
+  <body>
+    <div id="main_header">
+      <div id="header"></div>
+      <!-- header end -->
+      <!-- nav start  -->
+      <div id="navbar"></div>
+    </div>
+
+    <div id="container">
+      <div id="leftcont">
+        <div id="lefttop">
+          <div id="lefttop1cont"><h1>My Cart</h1></div>
+          <div id="lefttop2cont">
+            <div id="lefttop2">
+              <p>PRODUCT</p>
+            </div>
+            <div id="righttop2">
+              <p>QTY</p>
+              <p>PRICE</p>
+            </div>
+          </div>
+        </div>
+        <div id="leftbottom"></div>
+      </div>
+      <div id="rightcont"></div>
+    </div>
+
+
+    <div id="footer"></div>
+  </body>
+</html>
+<script src="cart.js">
+
+
+
+
+
+</script>
+<script type="module">
+  import {head} from '../components/head.js'
+            document.getElementById("header").innerHTML=head();
+              
+            import {navbar} from '../components/navbar.js'
+            document.getElementById("navbar").innerHTML=navbar();
+
+            import footerdata from "../components/footer.js";
+         document.getElementById("footer").innerHTML = footerdata();
+</script>
+
